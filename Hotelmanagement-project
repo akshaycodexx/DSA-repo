@@ -1,0 +1,179 @@
+#include<iostream>
+ using namespace std;
+
+int main (){
+    int Quant;
+    int choice;
+    //Quentity of food iteams:-
+int Qrooms=0,Qpasta=0,Qburgur=0,Qnodels=0,Qshakes=0,Qchicken=0;
+//food iteams solds:-
+int Srooms=0,Spasta=0,Sburgur=0,Snodels=0,Sshakes=0,Schicken=0;
+//total price of the rooms:-
+int total_rooms=0,total_pasta=0,total_burgur=0,total_nodels=0,total_shakes=0,total_chicken=0;
+
+
+
+
+cout<<"\n\t Quantity of iteams we have ";
+cout<<"\n Rooms Avilibles ";
+cin>>Qrooms;
+cout<<"\n Quantity of pasta ";
+cin>>Qpasta;
+cout<<"\n Quantity of burgur ";
+cin>>Qburgur;
+cout<<"\n Quantity of nodels ";
+cin>>Qnodels;
+cout<<"\n Quantity of shakes ";
+cin>>Qshakes;
+cout<<"\n Quantity of chicken rolls ";
+cin>>Qchicken;
+
+
+
+
+cout<<"\n\t\t\t please select from the menu options ";
+cout<<"\n\n1 Rooms ";
+cout<<"\n\n2 pasta ";
+cout<<"\n\n3 burgur ";
+cout<<"\n\n4 nodels ";
+cout<<"\n\n5 shakes ";
+cout<<"\n\n6 chicken rolls ";
+cout<<"\n\n7 information regarding sales and collection ";
+cout<<"\n\n8 Exit ";
+cout<<"\n\n\t\t\t\t please enter the choice ";
+
+
+cin>>choice;
+switch(choice){
+    case 1:
+    cout<<"\n\n\t\t\t Enter the no. of Rooms you want ? "<<endl;
+//    cout<<"\n\n\t\t\t Enter the Quantity of pasta if you want ? "<<endl;
+    cin>>Quant;
+    if (Qrooms-Qrooms>=Quant){
+        Srooms=Srooms+Quant;
+        total_rooms=total_rooms+Quant*1200;
+        cout<<"\n\n\t\t "<<Quant<<" Rooms Have been alloted to you ";
+
+    }else{
+        cout<<"\n\t Only "<<Qrooms-Srooms<<"Rooms remaining "<<endl;
+        // cout<<" \n\t there are limited rooms are hare ";
+    }break;
+
+
+
+  case 2:
+    cout<<"\n\n\t\t\t Enter the Quantity of pasta if you want ? "<<endl;
+    cin>>Quant;
+    if (Qpasta-Qpasta>=Quant){
+        Spasta=Spasta+Quant;
+        total_pasta=total_pasta+Quant*250;
+        cout<<"\n\n\t\t "<<Quant<<" pasta is the orderd ";
+
+    }else{
+        cout<<"\n\t Only "<<Qpasta-Spasta<<" pasta remaining in hotel ";
+    }break;
+    
+    case 3:
+    cout<<"\n\n\t\t\t Enter the Quantity of burgur if you want ? "<<endl;
+    cin>>Quant;
+    if (Qburgur-Qburgur>=Quant){
+        Sburgur=Sburgur+Quant;
+        total_burgur=total_burgur+Quant*120;
+        cout<<"\n\n\t\t "<<Quant<<" burgur is the orderd ";
+
+    }else{
+        cout<<"\n\t Only "<<Qburgur-Sburgur<<" burgur remaining in hotel ";
+    }break;
+    
+    
+    case 4:
+    cout<<"\n\n\t\t\t Enter the Quantity of nodels if you want ? "<<endl;
+    cin>>Quant;
+    if (Qnodels-Qnodels>=Quant){
+        Snodels=Snodels+Quant;
+        total_nodels=total_nodels+Quant*50;
+        cout<<"\n\n\t\t "<<Quant<<" nodels is the orderd ";
+
+    }else{
+        cout<<"\n\t Only "<<Qnodels-Snodels<<" nodels remaining in hotel ";
+    }break;
+    
+    
+    case 5:
+    cout<<"\n\n\t\t\t Enter the Quantity of shakes if you want ? "<<endl;
+    cin>>Quant;
+    if (Qshakes-Qshakes>=Quant){
+        Sshakes=Sshakes+Quant;
+        total_shakes=total_shakes+Quant*250;
+        cout<<"\n\n\t\t "<<Quant<<" shakes is the orderd ";
+
+    }else{
+        cout<<"\n\t Only "<<Qshakes-Sshakes<<" nodels remaining in hotel ";
+    }break;
+
+
+
+    case 6:
+    cout<<"\n\n\t\t\t Enter the Quantity of chicken Rolls if you want ? "<<endl;
+    cin>>Quant;
+    if (Qchicken-Qchicken>=Quant){
+        Schicken=Schicken+Quant;
+        total_chicken=total_chicken+Quant*150;
+        cout<<"\n\n\t\t "<<Quant<<" chicken Rolls is the orderd ";
+
+    }else{
+        cout<<"\n\t Only "<<Qchicken-Schicken<<" chicken Rolls remaining in hotel ";
+    }break;
+    case 7:
+    cout<<"\n\n\t\t\tDetails of sales and collections ";
+    cout<<"\n\n number of rooms we had : "<<Qrooms;
+    cout<<"\n\n Number of Rooms Give For Rents : "<<Srooms;
+    cout<<"\n\n Remaining Rooms "<<Qrooms-Srooms;
+    cout<<"\n\n Total rooms collection for the day : "<<total_rooms;
+    
+    
+    cout<<"\n\n number of Pasta we had : "<<Qpasta;
+    cout<<"\n\n Number of pasta sold : "<<Spasta;
+    cout<<"\n\n Remaining pasta "<<Qpasta-Spasta;
+    cout<<"\n\n Total pasta collection for the day : "<<total_pasta;
+
+
+
+    cout<<"\n\n number of burgur we had : "<<Qburgur;
+    cout<<"\n\n Number of burgur sold : "<<Sburgur;
+    cout<<"\n\n Remaining burgur "<<Qburgur-Sburgur;
+    cout<<"\n\n Total burgur collection for the day : "<<total_burgur;
+
+
+    cout<<"\n\n number of nodels we had : "<<Qnodels;
+    cout<<"\n\n Number of nodels sold : "<<Snodels;
+    cout<<"\n\n Remaining nodels "<<Qnodels-Snodels;
+    cout<<"\n\n Total nodels collection for the day : "<<total_nodels;
+
+
+    cout<<"\n\n number of shakes we had : "<<Qshakes;
+    cout<<"\n\n Number of shakes sold : "<<Sshakes;
+    cout<<"\n\n Remaining shakes "<<Qshakes-Sshakes;
+    cout<<"\n\n Total shakes collection for the day : "<<total_shakes;
+
+
+
+    cout<<"\n\n number of chicken we had : "<<Qchicken;
+    cout<<"\n\n Number of chicken sold : "<<Schicken;
+    cout<<"\n\n Remaining chicken "<<Qchicken-Schicken;
+    cout<<"\n\n Total chicken collection for the day : "<<total_chicken;
+    
+
+    case 8:
+    exit(0);
+    default:
+    cout<<"plese select within the number mention above ";
+    // goto(n);
+    
+    
+    
+    };
+
+    return 0; 
+}
+ 
